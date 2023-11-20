@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 200 800; /* Puedes ajustar los pesos según tus necesidades */
+    src: url('league-spartan/LeagueSpartan-VariableFont_wght.ttf') format('truetype')
+}
