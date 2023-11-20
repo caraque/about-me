@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/about-me/static/css/main.24b98b85.css",
+    "main.js": "/about-me/static/js/main.c8aee08f.js",
+    "static/js/787.55c86885.chunk.js": "/about-me/static/js/787.55c86885.chunk.js",
+    "static/media/person.png": "/about-me/static/media/person.d966697a317a82fe12d0.png",
+    "static/media/LeagueSpartan-VariableFont_wght.ttf": "/about-me/static/media/LeagueSpartan-VariableFont_wght.373d611ec44856608b96.ttf",
+    "static/media/behance.svg": "/about-me/static/media/behance.26293de87c6a3732a236f0f9fab2b893.svg",
+    "static/media/logo.svg": "/about-me/static/media/logo.1ee81b3062855d0c887a735179255e50.svg",
+    "static/media/linkedin.svg": "/about-me/static/media/linkedin.588c9eb1dbe0e0d8c18ecb2c81d33a18.svg",
+    "index.html": "/about-me/index.html",
+    "main.24b98b85.css.map": "/about-me/static/css/main.24b98b85.css.map",
+    "main.c8aee08f.js.map": "/about-me/static/js/main.c8aee08f.js.map",
+    "787.55c86885.chunk.js.map": "/about-me/static/js/787.55c86885.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24b98b85.css",
+    "static/js/main.c8aee08f.js"
+  ]
+}
