@@ -1,5 +1,5 @@
 import React from 'react';
-import {Me, Services} from "../templates/";
+import {Me, Services, Works} from "../templates/";
 import './Home.scss'
 
 function Home() {
@@ -7,6 +7,7 @@ function Home() {
     <div className="principal">
         <Me />
         <Services />
+        <Works />
     </div>
   );
 }
