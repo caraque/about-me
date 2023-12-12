@@ -7,13 +7,15 @@ import {ListServices} from "../../organisms";
 export default function Services() {
   return (
     <Flex vertical className="services-container">
-      <Flex style={{height: '30%'}}>
+      <Flex style={{height: '30%', paddingTop: '4%'}}>
         <Flex style={{width: '50%'}}>
-          <MiniTitle>- Services</MiniTitle>
+          <MiniTitle>- Servicios</MiniTitle>
         </Flex>
         <Flex style={{width: '50%'}}>
-          <Subtitle>La creatividad es como una fuente interminable: cuanto más la aprovechas, más se desborda en tu
-            mente con significado y originalidad.</Subtitle>
+          <Subtitle style={{fontSize: 30}}>
+            La creatividad es como una fuente interminable: cuanto más la aprovechas, más se desborda en tu mente con
+            significado y originalidad.
+          </Subtitle>
         </Flex>
       </Flex>
       <Flex style={{height: '70%'}}>

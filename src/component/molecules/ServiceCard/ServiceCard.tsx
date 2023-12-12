@@ -10,9 +10,12 @@ export default function ServiceCard(itemService: ItemService) {
         <div/>
       </Flex>
       <Flex style={{height: '50%', width: '100%', padding: 40}}>
-        {itemService.icon}
-        <ServiceCardName serviceName={itemService.description}/>
-        {itemService.description}
+        <Flex vertical style={{width: '30%', alignItems: 'center'}}>
+          {itemService.icon}
+        </Flex>
+        <Flex vertical style={{width: '70%'}}>
+          <ServiceCardName serviceName={itemService.description}/>
+        </Flex>
       </Flex>
     </Flex>
   )

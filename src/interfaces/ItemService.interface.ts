@@ -1,4 +1,6 @@
+import {ReactElement} from "react";
+
 export interface ItemService {
-  icon: any;
+  icon: ReactElement;
   description: string
 }

@@ -1,5 +1,8 @@
-
-#root, body {
+body {
   margin: 0;
-  font-family: League Spartan;
+  font-family: 'League Spartan', sans-serif;
+
+  .ant-flex {
+    font-family: 'League Spartan', sans-serif;
+  }
 }
