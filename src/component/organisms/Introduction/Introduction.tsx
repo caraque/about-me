@@ -1,21 +1,34 @@
 import React from "react";
 import {Flex} from "antd";
 import './Introduction.scss'
-import {MiniTitle, Paragraph, Subtitle} from "../../molecules";
+import {Greeting, IntroInfo, Profession, ProfessionalName} from "../../molecules";
+import Social from "../../molecules/Social/Social";
 
-const subtitleText = "Editor de Video, Motion Grpahics y Diseñador UX/UI."
-const introResume = "Editor de Video, Motion Grpahics y Diseñador UX/UI."
 
 export default function Introduction() {
   return (
     <Flex vertical className="introduction-container">
-      <Flex><MiniTitle>- Introduction</MiniTitle></Flex>
-      <Flex className="sub-title-container">
-        <Subtitle>{subtitleText}</Subtitle>
+      <Flex className="greeting">
+        <Greeting/>
+      </Flex>
+      <Flex className="full-name">
+        <ProfessionalName/>
+      </Flex>
+      <Flex className="profession">
+        <Profession/>
       </Flex>
       <Flex className="intro-resume-container">
-        <Paragraph>{introResume}</Paragraph>
+        <Flex vertical style={{width: '90%'}}>
+          <Flex>
+            <IntroInfo/>
+          </Flex>
+          <Flex style={{paddingTop: '5%'}}>
+            <Social/>
+          </Flex>
+        </Flex>
       </Flex>
     </Flex>
   )
 }
+
+

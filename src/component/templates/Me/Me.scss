@@ -2,13 +2,14 @@
 
 .me-container {
   background-color: $backgroundColor1;
-  background-image: url("../../../images/person.png");
+
   background-repeat: no-repeat;
   height: 100vh;
   padding: 70px 70px 0 70px;
+  background-size: 100%;
 
   .introduction-section {
-    align-items: end;
     width: 100%;
   }
 }
+

@@ -1,19 +1,17 @@
 @import '../../../styles/screen-size';
 
 @media screen and (max-width: $maxSmallScreen) {
-  .full-name {
-    .subtitle {
-      font-size: 40px !important;
-    }
+  #professional-image {
+    height: 400px !important;
+    width: 300px !important;
   }
 }
 
 @media screen and (min-width: $minMediumScreen) and (max-width: $maxMediumScreen) {
 
-  .full-name {
-    .subtitle {
-      font-size: 60px !important;
-    }
+  #professional-image {
+    height: 500px !important;
+    width: 400px !important;
   }
 
 }

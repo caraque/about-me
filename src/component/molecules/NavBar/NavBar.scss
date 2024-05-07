@@ -1,3 +1,5 @@
+@import '../../../styles/screen-size';
+
 .nav-bar-container {
   text-align: center;
   text-align: -webkit-center;
@@ -20,6 +22,22 @@
 
     .selected-text {
       color: #FFFFFF;
+    }
+  }
+
+  @media screen and (max-width: $maxSmallScreen) {
+      visibility: hidden;
+  }
+
+  @media screen and (min-width: $minMediumScreen) and (max-width: $maxMediumScreen) {
+    .nav-bar-item {
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (min-width: $minLargeScreen) {
+    .nav-bar-item {
+      font-size: 24px;
     }
   }
 }

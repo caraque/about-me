@@ -1,17 +1,17 @@
 import React from "react";
 import {Flex} from "antd";
 import {Subtitle} from "../index";
-import './ProfessionalName.scss'
+import './Profession.scss'
 
-const fullName = 'Christian Araque'
-export default function ProfessionalName() {
+const profession = "Full Stack Developer"
+export default function Profession() {
   return (
     <Flex vertical style={{justifyContent: 'center'}}>
-      <Subtitle style={styles}>{`I'm ${fullName}`}</Subtitle>
+      <Subtitle style={styles}>{profession}</Subtitle>
     </Flex>
   )
 }
 
 const styles = {
-  fontSize: 80
+  fontSize: 55
 }

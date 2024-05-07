@@ -1,12 +1,13 @@
+@import '../../../styles/colors';
+
 .introduction-container {
   padding-top: 30%;
-  width: 80%;
-
-  .sub-title-container {
-    padding-top: 10%;
-  }
 
   .intro-resume-container {
-    padding-top: 10%;
+    padding-top: 5%;
+  }
+
+  .greeting {
+    padding-bottom: 5px;
   }
 }

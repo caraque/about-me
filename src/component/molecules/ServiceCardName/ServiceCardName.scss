@@ -8,3 +8,15 @@
   line-height: 87.75%;
   padding-bottom: 10px;
 }
+
+@media (max-width: 1600px) {
+  .service-name {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .service-name {
+    font-size: 35px;
+  }
+}

@@ -8,13 +8,13 @@ import {ReactComponent as DesktopImage} from '../../../images/desktop.svg';
 
 const listServices: ItemService[] = [{
   icon: <PlayImage/>,
-  description: 'Editor de video.'
+  description: 'Servicios backend'
 }, {
   icon: <MotionBlurImage/>,
-  description: 'Motion Graphic.'
+  description: 'Aplicaciones web'
 }, {
   icon: <DesktopImage/>,
-  description: 'Diseño UX & UI.'
+  description: 'Aplicaciones móviles'
 }]
 
 export default function ListServices() {
