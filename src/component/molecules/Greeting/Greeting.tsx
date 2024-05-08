@@ -11,5 +11,5 @@ export default function Greeting() {
 }
 
 const styles = {
-  fontSize: 78
+  fontSize: 68
 }
