@@ -4,7 +4,7 @@ import './Home.scss'
 
 function Home() {
   return (
-    <div className="principal">
+    <div>
       <Me/>
       <Jobs/>
       <Services/>
