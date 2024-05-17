@@ -7,12 +7,15 @@ import {ReactComponent as MotionBlurImage} from '../../../images/motion-blur.svg
 import {ReactComponent as DesktopImage} from '../../../images/desktop.svg';
 
 const listServices: ItemService[] = [{
+  id: 'backend-service',
   icon: <PlayImage/>,
   description: 'Servicios backend'
 }, {
+  id: 'web-app',
   icon: <MotionBlurImage/>,
   description: 'Aplicaciones web'
 }, {
+  id: 'mobile-app',
   icon: <DesktopImage/>,
   description: 'Aplicaciones móviles'
 }]
@@ -21,7 +24,7 @@ export default function ListServices() {
   return (
     <Flex style={{width: '100%'}}>
       {listServices.map(service => (
-        <ServiceCard icon={service.icon} description={service.description}/>
+        <ServiceCard key={service.id} icon={service.icon} description={service.description}/>
       ))}
     </Flex>
   )

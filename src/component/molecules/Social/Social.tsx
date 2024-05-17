@@ -1,6 +1,5 @@
 import React from "react";
 import LinkedInLogo from '../../../images/linkedin.svg'
-import BehanceLogo from '../../../images/behance.svg'
 import {Flex} from "antd";
 
 const linkedInUrl = 'https://www.linkedin.com/in/christian-araque/';
