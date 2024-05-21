@@ -25,6 +25,7 @@ import {JobTechDetailProps} from "../../../interfaces/JobTechDetail.interface";
 
 const jobHistories = [
   {
+    id: 'walmart',
     description: 'Walmart',
     imageSrc: WalmartChileLogo,
     height: 140,
@@ -68,6 +69,7 @@ const jobHistories = [
     ]
   },
   {
+    id: 'imagemaker',
     description: 'ImageMaker',
     imageSrc: ImageMakerLogo,
     jobDescription: 'Realicé aplicaciones web y backend junto a equipos grandes y pequeños, apoyé a equipos por procesos de migración a plataforma cloud, análisis de información web mediante scrapping, transcripción de audios con la herramienta speech-to-text de Google y aplicación móvil en inglés para niños.',
@@ -115,6 +117,7 @@ const jobHistories = [
     ]
   },
   {
+    id: 'itpeople',
     description: 'ITPeople',
     imageSrc: ITPeopleLogo,
     jobDescription: 'Trabajé en el desarrollo y despliegue de una aplicación web y móvil encargada de manejar citas médicas de pacientes en una cadena de centros médicos de Chile',
@@ -152,6 +155,7 @@ const jobHistories = [
     ]
   },
   {
+    id: 'everis',
     description: 'Everis',
     imageSrc: NTTDataLogo,
     height: 50,
@@ -181,32 +185,42 @@ const jobHistories = [
   }
 ]
 export default function JobHistory() {
+  const [jobSelected, setJobSelected] = React.useState<string>('');
   const [jobDescription, setJobDescription] = React.useState<string>('');
   const [jobTechs, setJobTechs] = React.useState<JobTechDetailProps[]>([]);
 
   const onSelectCompany = (company: any) => {
+    setJobSelected(company.id)
     setJobTechs(company.techs);
     setJobDescription(company.jobDescription);
   }
 
   useEffect(() => {
-    setJobTechs(jobHistories[0].techs || []);
-    setJobDescription(jobHistories[0].jobDescription || '');
+    setJobSelected(jobHistories[0].id)
+    setJobTechs(jobHistories[0].techs);
+    setJobDescription(jobHistories[0].jobDescription);
   }, [])
+
   return (
     <Flex vertical>
       <Flex style={{width: '100%', justifyContent: 'center', flexDirection: 'row'}}>
         <Flex>
           {
+
             jobHistories.map(company => (
-              <Flex onClick={() => onSelectCompany(company)}>
-                <JobCompany description={company.description} imageSrc={company.imageSrc} height={company.height}/>
+              <Flex onClick={() => onSelectCompany(company)} key={company.id}>
+                <JobCompany
+                  description={company.description}
+                  imageSrc={company.imageSrc}
+                  height={company.height}
+                  isSelected={company.id === jobSelected}
+                />
               </Flex>
             ))
           }
         </Flex>
       </Flex>
-      <div style={{height: 0.3, width: '15%', backgroundColor: 'gray', alignSelf: 'center', marginTop: '2%'}}/>
+      <div style={{height: 0.3, width: '15%', alignSelf: 'center', marginTop: '2%'}}/>
       <Flex style={{width: '100%', height: 350}}>
         <JobDetails techs={jobTechs} description={jobDescription}/>
       </Flex>

@@ -2,6 +2,7 @@ import React from "react";
 import {Flex} from "antd";
 import {JobInfoActivity, JobTechDetail} from "../index";
 import {JobTechDetailProps} from "../../../interfaces/JobTechDetail.interface";
+import './JobCompany.scss';
 
 export default function JobDetails({techs, description}: { techs: JobTechDetailProps[], description: string }) {
   return (

@@ -1,8 +1,16 @@
 
 .job-company {
   min-width: 200px;
+  height: 200px;
   margin: 0 10px 0 10px;
+  padding-bottom: 10px;
   align-items: center;
   justify-content: center;
+  border-width: medium;
+  cursor: pointer;
+}
+
+.selected {
+  border-bottom: 1px solid ghostwhite;
 }
 
