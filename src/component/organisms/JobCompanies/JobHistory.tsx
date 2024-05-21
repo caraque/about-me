@@ -18,6 +18,9 @@ import IonicLogo from "../../../images/techs/ionic.png";
 import PostgresqlLogo from "../../../images/techs/postgresql.png";
 import CloudantLogo from "../../../images/techs/cloudant.png";
 import NodeRedLogo from "../../../images/techs/node-red.png";
+import JavaLogo from "../../../images/techs/java.png";
+import LiquidBaseLogo from "../../../images/techs/liquidbase.svg";
+import MongoDbLogo from "../../../images/techs/mongo-db.svg";
 import {JobTechDetailProps} from "../../../interfaces/JobTechDetail.interface";
 
 const jobHistories = [
@@ -152,6 +155,29 @@ const jobHistories = [
     description: 'Everis',
     imageSrc: NTTDataLogo,
     height: 50,
+    jobDescription: "Trabajé como desarrollador backend y me encargué en el desarrollo de servicios en banca chilena donde permitìa la integración de distintos equipos.",
+    techs: [
+      {
+        id: 'java',
+        imageSrc: JavaLogo,
+        description: 'Java',
+      },
+      {
+        id: 'mongo-db',
+        imageSrc: MongoDbLogo,
+        description: 'MongoDb',
+      },
+      {
+        id: 'liquidbase',
+        imageSrc: LiquidBaseLogo,
+        description: 'Liquidbase',
+      },
+      {
+        id: 'postgresql',
+        imageSrc: PostgresqlLogo,
+        description: 'PostgreSQL',
+      }
+    ]
   }
 ]
 export default function JobHistory() {

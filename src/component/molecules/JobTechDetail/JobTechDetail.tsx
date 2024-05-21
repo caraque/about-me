@@ -25,8 +25,7 @@ export default function JobTechDetail({techs}: { techs: JobTechDetailProps[] }) 
   }
 
   return (
-    <Flex>
-      <Row gutter={[16, 24]}>
+    <Flex wrap="wrap">
         {/*{
         techRows().map(items => (
               <Row>
@@ -42,14 +41,14 @@ export default function JobTechDetail({techs}: { techs: JobTechDetailProps[] }) 
         {
           techs.map(tech => (
 
-            <Col span={6} key={tech.id} style={{textAlign: 'center', padding: '15px 0', alignContent: 'center'}}>
+            <Flex key={tech.id} style={{textAlign: 'center', padding: '15px 0', alignContent: 'center', minWidth: '25%',
+              alignItems: 'center',
+              justifyContent: 'center'}}>
               <TechLogo src={tech.imageSrc} alt={tech.description} style={{height: tech.height || 70}}/>
-            </Col>
+            </Flex>
           ))
 
         }
-      </Row>
-
     </Flex>
   )
 }
