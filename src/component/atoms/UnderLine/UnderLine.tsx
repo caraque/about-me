@@ -1,11 +1,7 @@
-import React from "react";
-import './Underline.scss'
+import React, {CSSProperties} from "react";
 
-export function UnderLine({height, width}: { height?: number, width?: number }) {
+export function UnderLine({style, className}: { style?: CSSProperties, className?: string }) {
   return (
-    <div className="selector-line" style={{
-      height: height || 1,
-      width: width || 45
-    }}/>
+    <div style={style} className={className}/>
   )
 }

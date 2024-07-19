@@ -1,15 +1,19 @@
 import React from 'react';
-import {Me, Services, Works, Jobs} from "../templates/";
+import {Flex} from "antd";
 import './Home.scss'
+import {Presentation} from "../templates";
+import {Header, MyPhoto} from "../molecules";
 
 function Home() {
   return (
-    <div>
-      <Me/>
-      <Jobs/>
-      <Services/>
-      <Works/>
-    </div>
+    <Flex vertical className="background">
+      <Flex vertical className="presentation-flex-container">
+        <Presentation
+          header={<Header/>}
+          rightSide={<MyPhoto containerStyle="photo-container"/>}
+        />
+      </Flex>
+    </Flex>
   );
 }
 
