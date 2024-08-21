@@ -2,9 +2,10 @@ import React, {ReactNode} from "react";
 import {Flex} from "antd";
 
 interface PresentationProps {
-  header: ReactNode,
-  rightSide: ReactNode,
-  leftSideUp: ReactNode,
+  header?: ReactNode,
+  rightSide?: ReactNode,
+  leftSide?: ReactNode,
+  footer?: ReactNode,
 }
 
 export default function Presentation(props: PresentationProps) {
@@ -15,8 +16,8 @@ export default function Presentation(props: PresentationProps) {
       }</Flex>
       <Flex>
         <Flex vertical style={{width: '60%'}}>
-          <Flex style={{height: '70%'}}>{props.leftSideUp}</Flex>
-          <Flex style={{height: '30%'}}>Footer</Flex>
+          <Flex style={{height: '70%'}}>{props.leftSide}</Flex>
+          <Flex style={{height: '30%'}}>{props.footer}</Flex>
         </Flex>
         <Flex style={{width: '40%'}}>{
           props.rightSide

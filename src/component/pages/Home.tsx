@@ -11,7 +11,7 @@ function Home() {
         <Presentation
           header={<Header/>}
           rightSide={<MyPhoto containerStyle="photo-container"/>}
-          leftSideUp={<PersonalInfo />}
+          leftSide={<PersonalInfo />}
         />
       </Flex>
     </Flex>
