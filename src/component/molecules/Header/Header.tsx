@@ -13,7 +13,6 @@ export default function Header() {
       <Flex className="underline-container">
         <UnderLine className="underline"/>
       </Flex>
-
     </Flex>
   )
 }

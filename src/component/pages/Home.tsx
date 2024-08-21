@@ -2,7 +2,7 @@ import React from 'react';
 import {Flex} from "antd";
 import './Home.scss'
 import {Presentation} from "../templates";
-import {Header, MyPhoto, PersonalInfo} from "../molecules";
+import {Footer, Header, MyPhoto, PersonalInfo} from "../molecules";
 
 function Home() {
   return (
@@ -11,7 +11,8 @@ function Home() {
         <Presentation
           header={<Header/>}
           rightSide={<MyPhoto containerStyle="photo-container"/>}
-          leftSide={<PersonalInfo />}
+          leftSide={<PersonalInfo/>}
+          footer={<Footer/>}
         />
       </Flex>
     </Flex>
