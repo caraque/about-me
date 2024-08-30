@@ -9,6 +9,8 @@ import WalmartLogo from '../../../images/walmart-chile.png'
 import './PersonalInfo.scss'
 import {Paragraph} from "../index";
 
+const linkedInUrl = "https://www.linkedin.com/in/christian-araque/"
+
 export default function PersonalInfo() {
   return (
     <Flex vertical className="personal-container">
@@ -73,7 +75,7 @@ export default function PersonalInfo() {
               </Flex>
             </Flex>
             <Flex style={{width: '100%'}}>
-              <img alt="linkedin" src={LinkedInIcon}/>
+              <a href={linkedInUrl} target="_blank"><img alt="linkedin" src={LinkedInIcon} /></a>
             </Flex>
           </Flex>
         </Flex>

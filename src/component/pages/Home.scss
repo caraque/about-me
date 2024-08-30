@@ -1,6 +1,8 @@
+@import "../../styles/alignment";
+
 .background {
   background: #ACACAC;
-  align-items: center;
+  @include center-div;
 
   .presentation-flex-container {
     max-width: 1250px;

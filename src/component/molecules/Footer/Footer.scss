@@ -1,4 +1,23 @@
+@import "../../../styles/alignment";
+
 .footer-container {
   background: #282828;
   width: 100%;
+
+  .project-button {
+    height: 40px;
+    background: #FFD200;
+    border: none;
+    border-radius: 0;
+    width: 120px;
+  }
+
+  .footer-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    width: 100%;
+  }
 }

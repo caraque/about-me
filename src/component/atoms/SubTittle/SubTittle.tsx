@@ -1,8 +1,8 @@
-import React from "react";
+import React, {CSSProperties} from "react";
 import './SubTittle.scss'
 
-export function SubTittle({children}: { children: string }): JSX.Element {
+export function SubTittle({children, style}: { children: string, style?: CSSProperties }): React.JSX.Element {
   return (
-    <div className="sub-tittle">{children}</div>
+    <div className="sub-tittle" style={style}>{children}</div>
   )
 }

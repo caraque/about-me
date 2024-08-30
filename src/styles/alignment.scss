@@ -4,3 +4,11 @@ $paddingLeft: 101px;
 
 // Header
 $paddingTop: 26px;
+
+
+@mixin center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
